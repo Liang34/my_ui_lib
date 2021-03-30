@@ -1,4 +1,44 @@
 // styles/button.less
-.my-button {
-  background: yellowgreen;
+@import './border.less';
+
+@button-prefix-cls: ~"own-button";
+
+.@{button-prefix-cls} {
+  position: relative;
+  user-select: none;
+  outline: none;
+  width: 100%;
+  height: 88px;
+  line-height: 88px;
+  font-family: PingFangSC-Regular;
+  font-size: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  &-default {
+    background-image: linear-gradient(90deg, #4B90FF 0%, #3F6FEA 100%);
+  }
+  &-disabled {
+    background: #DDD;
+  }
+  &-light {
+    color: #4B90FF;
+    background: #FCFCFC;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  &-inline {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    padding: 0 30px;
+  }
+  &-outline {
+    color: #4B90FF;
+    background: transparent;
+    .border-1px(#4B90FF, 8px);
+  }
 }

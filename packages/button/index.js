@@ -1,8 +1,8 @@
 // packages/button/index.js
-import Button from './src/main.vue';
+import OwnButton from './src/main.vue';
 
-Button.install = function (Vue) {
-  Vue.component(Button.name, Button);
+OwnButton.install = function (Vue) {
+  Vue.component(OwnButton.name, OwnButton);
 };
 
-export default Button;
+export default OwnButton;
