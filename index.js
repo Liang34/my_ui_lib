@@ -1,10 +1,14 @@
 // index.js
-import Button from './packages/button/index.js';
-import Link from './packages/link/index.js';
-
+// import Button from './packages/button/index.js';
+// import Link from './packages/link/index.js';
+// import Dialog from './packages/dialog/index'
+import Button from './lib/button.js';
+import Link from './lib/link.js';
+import Dialog from './lib/dialog.js'
 const components = [
   Button,
   Link,
+  Dialog,
 ];
 
 const install = function (Vue, opt = {}) {
@@ -21,4 +25,5 @@ export default {
   install,
   Button,
   Link,
+  Dialog,
 };

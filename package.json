@@ -1,6 +1,6 @@
 {
   "name": "my_ui_lib_liang",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "vue组件库初始",
   "main": "index.js",
   "files": [
